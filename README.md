@@ -6,15 +6,16 @@ To open project:
   - Open the directory as a project.
   
 Section 1 Overview:
-  This document will describe the design decisions that have been made in the development
+
+This document will describe the design decisions that have been made in the development
 of The Village. It will justify the choices in design regarding the game world, creative and
 expressive play, character design, narrative structure, interface design, gameplay, and core
-mechanics, and how these choices ultimately aect the overall game.
+mechanics, and how these choices ultimately affect the overall game.
 
 1.1 Assets
   - Player & Player Movement Scripts - Asset Store: Standard Assets for Unity 4.6
   - Village Houses - Asset Store: Arabian & French buildings
-  - Terrain - unity Asset Store (can't nd exact link)
+  - Terrain - unity Asset Store (can't find exact link)
   - NPC's - Asset Store: Mighty Heroes (Rogue) 2D Fantasy Characters Pack
   - Trees - Free Low Poly Pack
   - Fence - clipart from Google Images
