@@ -1,0 +1,41 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Dialogue : MonoBehaviour {
+
+	private DialogueManager dMan;
+
+	public string[] dialogueLines;
+	private int count = 0;
+
+	private FenceCollider fence;
+
+	// Use this for initialization
+	void Start () {
+		dMan = FindObjectOfType<DialogueManager>();
+		fence = FindObjectOfType<FenceCollider>();
+	}
+
+	// Update is called once per frame
+	void Update () {
+
+	}
+
+	void OnTriggerStay2D(Collider2D other) {
+		if (other.gameObject.name == "Player") {
+			if (count == 0)) {
+				//dMan.ShowBox(dialogue);
+
+				if (!dMan.dialogueActive) {
+					dMan.dialogueLines = dialogueLines;
+					dMan.currentLine = 0;
+					dMan.ShowDialogue();
+				}
+
+				count += 1;
+				fence.fenceCount += 1;
+			}
+		}
+	}
+}
