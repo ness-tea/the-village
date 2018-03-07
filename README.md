@@ -5,8 +5,8 @@ To open project:
   - Download repo onto your local computer.
   - Open the directory as a project.
   
-Section 1: Overview
-    This document will describe the design decisions that have been made in the development
+Section 1 Overview:
+  This document will describe the design decisions that have been made in the development
 of The Village. It will justify the choices in design regarding the game world, creative and
 expressive play, character design, narrative structure, interface design, gameplay, and core
 mechanics, and how these choices ultimately aect the overall game.
