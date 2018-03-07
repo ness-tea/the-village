@@ -10,7 +10,7 @@ To open project:
 This document will describe the design decisions that have been made in the development
 of The Village. It will justify the choices in design regarding the game world, creative and
 expressive play, character design, narrative structure, interface design, gameplay, and core
-mechanics, and how these choices ultimately affect the overall game.
+mechanics, as well as discuss how these choices ultimately affect the overall game.
 
 1.1 Assets
   - Player & Player Movement Scripts - Asset Store: Standard Assets for Unity 4.6
