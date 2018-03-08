@@ -5,14 +5,14 @@ To open project:
   - Download repo onto your local computer.
   - Open the directory as a project.
   
-1 Overview:
+## 1 Overview:
 
 This document will describe the design decisions that have been made in the development
 of The Village. It will justify the choices in design regarding the game world, creative and
 expressive play, character design, narrative structure, interface design, gameplay, and core
 mechanics; it details how these choices ultimately affect the overall game.
 
-1.1 Assets
+### 1.1 Assets
   - Player & Player Movement Scripts - Asset Store: Standard Assets for Unity 4.6
   - Village Houses - Asset Store: Arabian & French buildings
   - Terrain - unity Asset Store (can't find exact link)
@@ -23,9 +23,9 @@ mechanics; it details how these choices ultimately affect the overall game.
   - Berry bush - clipart from Google Images
   - Secret notes - clipart from Google Images
 
-2 Game Setting & World
+## 2 Game Setting & World
 
-2.1 Setting 
+### 2.1 Setting 
 
 The Village in a mysterious, remote, and dark little town situated in the middle of nowhere. 
 The exact location of the village is unknown to the player. The general atmosphere of The Village's 
@@ -35,7 +35,7 @@ and the dark, muted colour palette of the village's environment, the game settin
 to ignite a sense of curiosity. It encourages the player to be intrigued enough to continue 
 playing the game and uncovering the mysteries that are scattered around its setting.
 
-2.2 World
+### 2.2 World
 
 The game world of The Village entails many strange superstitions and beliefs that the
 villagers follow; how every villager keeps a secret note with a wish on them under the belief
@@ -48,9 +48,9 @@ meant to be questioned and poked at by the player, so that it keeps them engaged
 game's story and sequence.
 
 
-3 Creative & Expressive Play
+## 3 Creative & Expressive Play
 
-3.1 Rationale for No Player Creativity or Expression
+### 3.1 Rationale for No Player Creativity or Expression
 
 Although The Village does not heavily encompass the player with creative or expressive
 play, there are a few elements that allow the player some creative thinking in the process.
@@ -63,7 +63,7 @@ the character that they're playing; the game is designed so that the player will
 encouraged to unravel more information on who their character is and what their purpose
 is.
 
-3.2 Minimal Creativity 
+## 3.2 Minimal Creativity 
 
 Nevertheless, the game offers some creative thinking for the player at a future checkpoint,
 when the player has to figure out some way to distract all the villagers and escape the village.
@@ -71,7 +71,7 @@ At this point, the game will give the player several directions to take, meaning
 are multiple ways that the player could create a distraction. The burden is on the player to
 creatively improvise and choose a tactic to carry out this mission.
 
-4 Character Design
+### 4 Character Design
 
 The characters in The Village consist of the player's character and the NPC's within
 the village. The player will get the chance to learn more about their character's personality
@@ -91,7 +91,7 @@ secretively confess these to the player. This will give the player a growing sen
 for the village, all of which will lead the player to the climatic reveal of the village at some
 point down the game's progress.
 
-5 Interface Design 
+## 5 Interface Design 
 
 The Village does not encompass many complex user controls. In the 2D nature of the
 game, the player has controls for moving left and right (the left and right arrow keys), as
@@ -104,7 +104,7 @@ them. As the player progresses through the game, the dialogue box will occasiona
 and express the character's thoughts, which will work to provide hints and guide the player
 closer to achieving each checkpoint.
 
-6 Narrative Structure
+## 6 Narrative Structure
 
 The Village is a game that is hugely driven by its narration. The player essentially
 narrates the story through uncovering the different checkpoints in the game. Nothing is
@@ -122,7 +122,7 @@ Later on, the player will be requested by selected NPC's to venture beyond the v
 into the Dark Abyss to carry out small quests. From these quests, the player will be taken
 on the insidious journey to unravelling what exactly the village is hiding and its dark secrets.
 
-7 Gameplay
+## 7 Gameplay
 
 Throughout The Village, there will be checkpoints that the player will need to reach.
 Checkpoints will be marked or defined at certain puzzles/clues throughout the game. The
@@ -134,7 +134,7 @@ discovers that checkpointed clue, they will achieve a checkpoint, and be able to
 the next checkpoint. These checkpoints can be in the form of interactions with an NPC, or
 an event that occurs with the player's character.
 
-7.1 Checkpoints
+### 7.1 Checkpoints
 
 An outline of the checkpoints thus far in the game:
 1. Player talks to the NPC villagers and gains insight on the village backstory.
@@ -148,7 +148,7 @@ again.
 agenda.
 These checkpoints will take approximately 5 minutes for the player to solve.
 
-8 Core Mechanics
+## 8 Core Mechanics
 
 The core mechanics for The Village for the most part imitates the behaviour on earth.
 There is a central force of gravity that acts on all objects, thus the player is only able to
