@@ -8,7 +8,7 @@ To open project:
   - Audio excluded due to large size.
 ```
 
-What has been implemented:
+What's been implemented + Ideas:
   - [x] **Checkpoint 1:** Player talks to all NPC's.
   - [X] **Checkpoint 2:** Player receives quest from Laris.
   - [x] **Checkpoint 3:** Player achieves quest and returns to Laris.
@@ -17,6 +17,9 @@ What has been implemented:
   - [ ] **Checkpoint 6:** Player returns to ceremonial gathering.
   - [ ] **Checkpoint 7:** Different ways for Player to distract village.
   - [ ] **Checkpoint 8:** The Escape Plan.
+  - [ ] **In-game AI Monsters:**
+  - [ ] **Health Status Bar**
+  - [ ] **Currency System**
   
 ## 1 Overview:
 
