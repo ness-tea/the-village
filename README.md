@@ -150,7 +150,7 @@ an event that occurs with the player's character.
 ### 7.1 Checkpoints
 
 An outline of the checkpoints thus far in the game:
-```
+
 1. Player talks to the NPC villagers and gains insight on the village backstory.
 2. Player is requested by Laris (a villager) to gather berries from the berry farm in the
 Dark Abyss (beyond the village outskirts).
@@ -161,7 +161,6 @@ again.
 6. Player stumbles upon pile of secret notes and discovers that village may have insidious
 agenda.
 These checkpoints will take approximately 5 minutes for the player to solve.
-```
 
 ## 8 Core Mechanics
 
