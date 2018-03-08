@@ -1,9 +1,21 @@
-# the-Village-1.0
+# The Village 1.0
 (In Progress) A 2D puzzle-platform-adventure game developed in Unity and C#. Looking into implementing AI for in-game opponents.
 
 To open project:
+'''
   - Download repo onto your local computer.
-  - Open the directory as a project.
+  - Open the directory as a project in Unity.
+  - Audio excluded due to large size.
+'''
+What has been implemented:
+  - [x] **Checkpoint 1:** Player talks to all NPC's.
+  - [X] **Checkpoint 2:** Player receives quest from Laris.
+  - [x] **Checkpoint 3:** Player achieves quest and returns to Laris.
+  - [x] **Checkpoint 4:** Player receives quest from Donyke.
+  - [x] **Checkpoint 5:** Player explores **Dark Abyss** underground.
+  - [ ] **Checkpoint 6:** Player returns to ceremonial gathering.
+  - [ ] **Checkpoint 7:** Different ways for Player to distract village.
+  - [ ] **Checkpoint 8:** The Escape Plan.
   
 ## 1 Overview:
 
@@ -137,6 +149,7 @@ an event that occurs with the player's character.
 ### 7.1 Checkpoints
 
 An outline of the checkpoints thus far in the game:
+'''
 1. Player talks to the NPC villagers and gains insight on the village backstory.
 2. Player is requested by Laris (a villager) to gather berries from the berry farm in the
 Dark Abyss (beyond the village outskirts).
@@ -147,6 +160,7 @@ again.
 6. Player stumbles upon pile of secret notes and discovers that village may have insidious
 agenda.
 These checkpoints will take approximately 5 minutes for the player to solve.
+'''
 
 ## 8 Core Mechanics
 
