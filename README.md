@@ -8,7 +8,7 @@ To open project:
   - Audio excluded due to large size.
 ```
 
-What's been implemented + Ideas:
+What's been implemented + Potential ideas:
   - [x] **Checkpoint 1:** Player talks to all NPC's.
   - [X] **Checkpoint 2:** Player receives quest from Laris.
   - [x] **Checkpoint 3:** Player achieves quest and returns to Laris.
