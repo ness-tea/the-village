@@ -1,0 +1,29 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class FadeOut : MonoBehaviour {
+
+	public Button yourButton;
+
+	void Start() {
+		Button btn = yourButton.GetComponent<Button>();
+		btn.onClick.AddListener(FadeMe);
+	}
+
+	public void FadeMe() {
+		StartCoroutine(DoFade());
+
+	}
+
+	IEnumerator DoFade() {
+		CanvasGroup canvasGroup = GetComponent<CanvasGroup>();
+		while (canvasGroup.alpha>0){
+			canvasGroup.alpha -=Time.deltaTime / 2;
+			yield return null;
+		}
+		canvasGroup.interactable = false;
+		yield return null;
+	}
+}

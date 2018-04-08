@@ -16,19 +16,29 @@ public class DialogueManager : MonoBehaviour {
 	public string[] dialogueLines;
 	public int currentLine;
 
+	private GameObject player;
+	private Animator anim;
+
 	// Use this for initialization
 	void Start () {
-		
+		player = GameObject.FindWithTag("Player");
+		anim = GameObject.FindWithTag("Player").GetComponent<Animator>();
 	}
 
 	// Update is called once per frame
 	void Update () {
-		if (dialogueActive && Input.GetKeyDown(KeyCode.Return)) {
-			//dBox.SetActive(false);
-			//dialogueActive = false;
-			currentLine++;
+		if (dialogueActive) {
+			player.GetComponent<Platformer2DUserControl>().enabled = false;
+			anim.SetBool("Dialogue", true);
+			if (Input.GetKeyDown(KeyCode.Return)) {
+				//dBox.SetActive(false);
+				//dialogueActive = false;
+				currentLine++;
+			}
 		}
 		if (currentLine >= dialogueLines.Length) {
+			player.GetComponent<Platformer2DUserControl>().enabled = true;
+			anim.SetBool("Dialogue", false);
 			dBox.SetActive(false);
 			dialogueActive = false;
 

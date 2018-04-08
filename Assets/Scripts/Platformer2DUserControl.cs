@@ -10,8 +10,6 @@ namespace UnitySampleAssets._2D
         private PlatformerCharacter2D character;
         private bool jump;
 
-	public DialogueManager dMan;
-
         private void Awake()
         {
             character = GetComponent<PlatformerCharacter2D>();
@@ -19,12 +17,11 @@ namespace UnitySampleAssets._2D
 
 	private void Start() 
 	{
-	    dMan = FindObjectOfType<DialogueManager>();
 	}
 
         private void Update()
         {
-            if(!jump || !dMan.dialogueActive)
+            if(!jump)
             // Read the jump input in Update so button presses aren't missed.
             jump = CrossPlatformInputManager.GetButtonDown("Jump");
         }

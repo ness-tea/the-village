@@ -6,13 +6,12 @@ public class Fading : MonoBehaviour {
 
 	public Texture2D fadeOutTexture;
 	public float fadeSpeed = 0.8f;
+	public int fadeDir = -1; // fadein = 1, fadeout = 
 
 	// order in draw hierarchy, will be rendered on top of everything
 	private int drawDepth = -1000; 
 
 	private float alpha = 1.0f;
-	private int fadeDir = -1; // fadein = 1, fadeout = 1
-
 
 	void OnGUI() {
 		alpha += fadeDir * fadeSpeed * Time.deltaTime;
