@@ -7,6 +7,7 @@ public class Dialogue : MonoBehaviour {
 	private DialogueManager dMan;
 
 	public string[] dialogueLines;
+	public string cp;
 	private int count = 0;
 
 	private FenceCollider fence;
@@ -32,7 +33,6 @@ public class Dialogue : MonoBehaviour {
 					dMan.currentLine = 0;
 					dMan.ShowDialogue();
 				}
-
 				count += 1;
 				fence.fenceCount += 1;
 			}

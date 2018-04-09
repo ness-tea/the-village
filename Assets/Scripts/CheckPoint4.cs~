@@ -1,0 +1,27 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Checkpoint4 : MonoBehaviour {
+
+	private CheckpointManager cMan;
+	private Collider2D Laris;
+
+	// Use this for initialization
+	void Start () {
+		cMan = FindObjectOfType<CheckpointManager>();	
+		Laris = GetComponent<Collider2D>();
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+
+	
+	void OnTriggerStay2D(Collider2D other) {
+		if (other.gameObject.name == "Player") {
+			cMan.cp4 = true;
+		}
+	}
+}

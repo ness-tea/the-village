@@ -5,8 +5,10 @@ using UnityEngine;
 public class Dialogue : MonoBehaviour {
 
 	private DialogueManager dMan;
+	private CheckpointManager cMan;
 
 	public string[] dialogueLines;
+	public int cp;
 	private int count = 0;
 
 	private FenceCollider fence;
@@ -14,6 +16,7 @@ public class Dialogue : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		dMan = FindObjectOfType<DialogueManager>();
+		cMan = FindObjectOfType<CheckpointManager>();
 		fence = FindObjectOfType<FenceCollider>();
 	}
 
@@ -24,7 +27,7 @@ public class Dialogue : MonoBehaviour {
 
 	void OnTriggerStay2D(Collider2D other) {
 		if (other.gameObject.name == "Player") {
-			if (count == 0)) {
+			if (count == 0) {
 				//dMan.ShowBox(dialogue);
 
 				if (!dMan.dialogueActive) {
@@ -32,8 +35,8 @@ public class Dialogue : MonoBehaviour {
 					dMan.currentLine = 0;
 					dMan.ShowDialogue();
 				}
-
 				count += 1;
+				cMan.cp = true;
 				fence.fenceCount += 1;
 			}
 		}

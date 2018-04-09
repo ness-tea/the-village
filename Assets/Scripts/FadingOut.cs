@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fading : MonoBehaviour {
+public class FadingOut : MonoBehaviour {
 
 	public Texture2D fadeOutTexture;
 	public float fadeSpeed = 0.8f;
-	private int fadeDir = -1; // fadein = 1, fadeout = -1
+	private int fadeDir = 1; // fadein = 1, fadeout = -1
 
 	// order in draw hierarchy, will be rendered on top of everything
 	private int drawDepth = -1000; 
 
-	private float alpha = 1.0f;
+	private float alpha = 0.0f;
 
 	void OnGUI() {
 		alpha += fadeDir * fadeSpeed * Time.deltaTime;
@@ -27,7 +27,8 @@ public class Fading : MonoBehaviour {
 	}
 
 	void OnLevelWasLoaded() {
-		BeginFade(-1);
+		BeginFade(1);
 	}
 
 }
+

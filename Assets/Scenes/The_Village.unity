@@ -1667,6 +1667,7 @@ MonoBehaviour:
   - '"Looking at all these fireflies gives me much hope!"'
   - '"They say that every firefly represents a secret note wish that''s been fulfilled."'
   - '"Hopefully there''ll be one more firefly by tonight."'
+  cp: 
 --- !u!61 &69693165
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6355,7 +6356,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeOutTexture: {fileID: 2800000, guid: c5d1be8fab6f58e49948050eec14cff6, type: 3}
   fadeSpeed: 0.2
-  fadeDir: -1
 --- !u!4 &168213385 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 7acfa992a6346bb4cbf61974f97b3d4d, type: 3}
@@ -6624,6 +6624,7 @@ MonoBehaviour:
   - '"And you VILLAGE IDIOTS are ruining it. You best have your secret note on you."'
   - '"Better yet . . . don''t matter if you ain''t got yours. Now get outta my face."'
   - Jeez. Some of these villagers shoved their sticks a little too far up their asses.
+  cp: 
 --- !u!61 &188491871
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49559,6 +49560,7 @@ GameObject:
   - component: {fileID: 839025755}
   - component: {fileID: 839025757}
   - component: {fileID: 839025756}
+  - component: {fileID: 839025758}
   m_Layer: 0
   m_Name: dialogueZone
   m_TagString: Untagged
@@ -49603,6 +49605,7 @@ MonoBehaviour:
   - Well I'll be damned . . . not the first time the village has kept something like
     this from us.
   - Guess I should go find that berry farm now.
+  cp: 
 --- !u!61 &839025757
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -49628,6 +49631,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 27.517517, y: 10.123871}
   m_EdgeRadius: 0
+--- !u!114 &839025758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 839025754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc76fdc261d676f4b8c001f249864fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &843840743 stripped
 Transform:
   m_PrefabParentObject: {fileID: 482284, guid: aa6b62556874da3449a2f5d363d040c7, type: 2}
@@ -50096,6 +50110,7 @@ MonoBehaviour:
   - '"Can''t stay, won''t stay"'
   - Oh god... this is bad
   - I should leave.
+  cp: 
 --- !u!61 &903512519
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50966,7 +50981,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.17082572, y: 0}
+  m_Offset: {x: -0.12105501, y: 6.9528456}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -50977,7 +50992,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.65834856, y: 1}
+  m_Size: {x: 0.75789, y: 14.905691}
   m_EdgeRadius: 0
 --- !u!114 &982974861
 MonoBehaviour:
@@ -50993,6 +51008,7 @@ MonoBehaviour:
   dialogueLines:
   - '"VILLAGE OUTSKIRTS: DO NOT PASS. VIOLATORS WILL BE EXECUTED."   '
   - Guess I shouldn't go there...
+  cp: 
 --- !u!1 &988879985
 GameObject:
   m_ObjectHideFlags: 0
@@ -51064,7 +51080,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -51681,6 +51697,7 @@ MonoBehaviour:
   - Man that was one hell of a walk . . . alas, the berry farm!
   - Hmm . . . fireflies? I thought they only swarm in the village.
   - Probably shouldn't keep Laris waiting.
+  cp: 
 --- !u!61 &1026710644
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -74331,6 +74348,7 @@ MonoBehaviour:
     note tonight?"'
   - I'll just follow along for now. Best not let'em know I'm not one with their ways.
   - Stubborn and odd . . . best way to describe these villagers.
+  cp: 
 --- !u!61 &1396990234
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -78488,7 +78506,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8, y: -115}
+  m_AnchoredPosition: {x: 0, y: -158}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1424100767
@@ -86354,6 +86372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1704129451}
   - component: {fileID: 1704129452}
+  - component: {fileID: 1704129453}
   m_Layer: 5
   m_Name: Dialogue Manager
   m_TagString: Untagged
@@ -86401,6 +86420,22 @@ MonoBehaviour:
   - Well, I should explore the village a bit for now. Ceremony is happening tonight
     so I might as well stick around.
   currentLine: 0
+--- !u!114 &1704129453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1704129450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c57db7f8fb885b84c8bee257e7a3a47c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cp1: 0
+  cp2: 0
+  cp3: 0
+  cp4: 0
+  cp5: 0
 --- !u!1 &1704545102
 GameObject:
   m_ObjectHideFlags: 0
@@ -87606,6 +87641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - Strange . . . More fireflies . . . ?
+  cp: 
 --- !u!61 &1748032754
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -88033,6 +88069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - This must be under the berry bushes . . . where all those fireflies came from!
+  cp: 
 --- !u!1 &1779841013
 GameObject:
   m_ObjectHideFlags: 0
@@ -88274,6 +88311,7 @@ MonoBehaviour:
   - Could you go into the forest undergrounds and help me find it? Please...
   - My family will be punished harshly for it... I can't do that to them...
   - You'll get an award for it... I promise.
+  cp: 
 --- !u!61 &1789210268
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -102265,6 +102303,7 @@ MonoBehaviour:
   - "\"THE VILLAGE \u2192 \""
   - "\" \u2190 PROHIBITED \""
   - 'I wonder . . . '
+  cp: 
 --- !u!61 &2037319810
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -102460,6 +102499,7 @@ GameObject:
   - component: {fileID: 2050359537}
   - component: {fileID: 2050359539}
   - component: {fileID: 2050359538}
+  - component: {fileID: 2050359540}
   m_Layer: 0
   m_Name: fence (3)
   m_TagString: Untagged
@@ -102549,6 +102589,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &2050359540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2050359536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a4ceea1eb4117a43ab8b5a332b4adff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2054625167
 Prefab:
   m_ObjectHideFlags: 0
@@ -106506,6 +106557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - "\"BERRY BUSH FARM \u2192 \""
+  cp: 
 --- !u!61 &2095037397
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -106918,6 +106970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - Let's hope no catches me...
+  cp: 
 --- !u!61 &2135183158
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -106930,7 +106983,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.83}
+  m_Offset: {x: -2.9299998, y: 3.5194616}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -106941,7 +106994,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.62, y: 1}
+  m_Size: {x: 3.62, y: 6.3789234}
   m_EdgeRadius: 0
 --- !u!1 &2137689394
 GameObject:
