@@ -16,6 +16,8 @@ public class DialogueManager : MonoBehaviour {
 	public string[] dialogueLines;
 	public int currentLine;
 
+	public string lastDialogue;
+
 	private GameObject player;
 	private Animator anim;
 

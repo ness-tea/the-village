@@ -5,7 +5,7 @@ using UnityEngine;
 public class CheckPoint5 : MonoBehaviour {
 
 	private Collider2D berryFarm;
-	public CheckpointManager cMan;
+	private CheckpointManager cMan;
 
 	// Use this for initialization
 	void Start () {

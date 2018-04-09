@@ -16,6 +16,7 @@ public class CheckPoint5 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (cMan.cp4) {
+			cMan.cp5 = true;
 			berryFarm.enabled = false;
 			Debug.Log("Checkpoint5 achieved, Berry Farm Fence disabled");
 		}			

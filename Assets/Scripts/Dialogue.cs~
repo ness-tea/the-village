@@ -5,19 +5,14 @@ using UnityEngine;
 public class Dialogue : MonoBehaviour {
 
 	private DialogueManager dMan;
-	private CheckpointManager cMan;
 
 	public string[] dialogueLines;
-	public int cp;
 	private int count = 0;
 
-	private FenceCollider fence;
 
 	// Use this for initialization
 	void Start () {
 		dMan = FindObjectOfType<DialogueManager>();
-		cMan = FindObjectOfType<CheckpointManager>();
-		fence = FindObjectOfType<FenceCollider>();
 	}
 
 	// Update is called once per frame
@@ -36,8 +31,6 @@ public class Dialogue : MonoBehaviour {
 					dMan.ShowDialogue();
 				}
 				count += 1;
-				cMan.cp = true;
-				fence.fenceCount += 1;
 			}
 		}
 	}

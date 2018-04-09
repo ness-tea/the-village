@@ -24,3 +24,4 @@ public class CheckPoint3 : MonoBehaviour {
 			cMan.cp3 = true;
 		}
 	}
+}

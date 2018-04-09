@@ -9,6 +9,7 @@ public class CheckpointManager : MonoBehaviour {
 	public bool cp3;
 	public bool cp4;
 	public bool cp5;
+	public bool cp6;
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +18,7 @@ public class CheckpointManager : MonoBehaviour {
 		cp3 = false; 
 		cp4 = false; 
 		cp5 = false;
+		cp6 = false;
 	}
 	
 	// Update is called once per frame

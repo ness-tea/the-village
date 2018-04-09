@@ -5,19 +5,19 @@ using UnityEngine;
 public class FenceMessageBoard : MonoBehaviour {
 	
 	public Collider2D message;
-	public FenceCollider fence;
+	public CheckpointManager cMan;
 
 	// Use this for initialization
 	void Start () {
 	    message = GetComponent<Collider2D>();
-	    fence = GetComponent<FenceCollider>();
+	    cMan = FindObjectOfType<CheckpointManager>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	    if (fence.fenceCount == 5)
+	    if (cMan.cp6)
 	    {
-	         message.isTrigger = false;  
+	         message.enabled = false;  
 	    }
 	}
 }

@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class FenceCollider : MonoBehaviour {
 	
+	private CheckpointManager cMan;
 	public Collider2D fence;
-	public int fenceCount;
 
 	// Use this for initialization
 	void Start () {
+		cMan = FindObjectOfType<CheckpointManager>();
 		fence = GetComponent<Collider2D>();
-		fenceCount = 0;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (fenceCount == 5)
+		if (cMan.cp6)
 		{
 		    fence.enabled = false;
 		    Debug.Log("Collider2D.enabled = " + fence.enabled);

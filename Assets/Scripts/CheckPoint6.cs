@@ -2,17 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Dialogue : MonoBehaviour {
+public class CheckPoint6 : MonoBehaviour {
 
 	private DialogueManager dMan;
+	private CheckpointManager cMan;
 
 	public string[] dialogueLines;
-	private int count = 0;
+	public int count = 0;
 
+	private Collider2D NPC;
 
 	// Use this for initialization
 	void Start () {
 		dMan = FindObjectOfType<DialogueManager>();
+		cMan = FindObjectOfType<CheckpointManager>();
+		NPC = GetComponent<Collider2D>();
 	}
 
 	// Update is called once per frame
@@ -23,13 +27,13 @@ public class Dialogue : MonoBehaviour {
 	void OnTriggerStay2D(Collider2D other) {
 		if (other.gameObject.name == "Player") {
 			if (count == 0) {
-				//dMan.ShowBox(dialogue);
 
 				if (!dMan.dialogueActive) {
 					dMan.dialogueLines = dialogueLines;
 					dMan.currentLine = 0;
 					dMan.ShowDialogue();
 				}
+				cMan.cp6 = true;
 				count += 1;
 			}
 		}

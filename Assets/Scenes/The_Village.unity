@@ -1632,6 +1632,7 @@ GameObject:
   - component: {fileID: 69693163}
   - component: {fileID: 69693165}
   - component: {fileID: 69693164}
+  - component: {fileID: 69693166}
   m_Layer: 0
   m_Name: dialogueZone
   m_TagString: Untagged
@@ -1667,7 +1668,6 @@ MonoBehaviour:
   - '"Looking at all these fireflies gives me much hope!"'
   - '"They say that every firefly represents a secret note wish that''s been fulfilled."'
   - '"Hopefully there''ll be one more firefly by tonight."'
-  cp: 
 --- !u!61 &69693165
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1693,6 +1693,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20, y: 11.257171}
   m_EdgeRadius: 0
+--- !u!114 &69693166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 69693162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc2aba6fce8edb4e900b565398bb75a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &70828683 stripped
 Transform:
   m_PrefabParentObject: {fileID: 482284, guid: aa6b62556874da3449a2f5d363d040c7, type: 2}
@@ -6585,6 +6596,7 @@ GameObject:
   - component: {fileID: 188491869}
   - component: {fileID: 188491871}
   - component: {fileID: 188491870}
+  - component: {fileID: 188491872}
   m_Layer: 0
   m_Name: dialogueZone
   m_TagString: Untagged
@@ -6624,7 +6636,6 @@ MonoBehaviour:
   - '"And you VILLAGE IDIOTS are ruining it. You best have your secret note on you."'
   - '"Better yet . . . don''t matter if you ain''t got yours. Now get outta my face."'
   - Jeez. Some of these villagers shoved their sticks a little too far up their asses.
-  cp: 
 --- !u!61 &188491871
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6650,6 +6661,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8344386, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &188491872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 188491868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 859e5edd2020ab74c9111cf8e8a6b925, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &188885319 stripped
 Transform:
   m_PrefabParentObject: {fileID: 482284, guid: aa6b62556874da3449a2f5d363d040c7, type: 2}
@@ -33442,7 +33464,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fence: {fileID: 541077475}
-  fenceCount: 0
 --- !u!1001 &541450146
 Prefab:
   m_ObjectHideFlags: 0
@@ -49605,7 +49626,6 @@ MonoBehaviour:
   - Well I'll be damned . . . not the first time the village has kept something like
     this from us.
   - Guess I should go find that berry farm now.
-  cp: 
 --- !u!61 &839025757
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50110,7 +50130,6 @@ MonoBehaviour:
   - '"Can''t stay, won''t stay"'
   - Oh god... this is bad
   - I should leave.
-  cp: 
 --- !u!61 &903512519
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50949,6 +50968,7 @@ GameObject:
   - component: {fileID: 982974859}
   - component: {fileID: 982974860}
   - component: {fileID: 982974861}
+  - component: {fileID: 982974862}
   m_Layer: 0
   m_Name: Message board
   m_TagString: Untagged
@@ -51000,7 +51020,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 982974858}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4f62648a323ce0488f2ef998f9e2793, type: 3}
   m_Name: 
@@ -51008,7 +51028,22 @@ MonoBehaviour:
   dialogueLines:
   - '"VILLAGE OUTSKIRTS: DO NOT PASS. VIOLATORS WILL BE EXECUTED."   '
   - Guess I shouldn't go there...
-  cp: 
+--- !u!114 &982974862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 982974858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8271f58620b98a04e8122ecdb1a70b47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - '"VILLAGE OUTSKIRTS: DO NOT PASS. VIOLATORS WILL BE EXECUTED."   '
+  - Guess I shouldn't go there...
+  dialogueLine: 
+  count: 0
 --- !u!1 &988879985
 GameObject:
   m_ObjectHideFlags: 0
@@ -51697,7 +51732,6 @@ MonoBehaviour:
   - Man that was one hell of a walk . . . alas, the berry farm!
   - Hmm . . . fireflies? I thought they only swarm in the village.
   - Probably shouldn't keep Laris waiting.
-  cp: 
 --- !u!61 &1026710644
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -74307,6 +74341,7 @@ GameObject:
   - component: {fileID: 1396990232}
   - component: {fileID: 1396990234}
   - component: {fileID: 1396990233}
+  - component: {fileID: 1396990235}
   m_Layer: 0
   m_Name: dialogueZone
   m_TagString: Untagged
@@ -74348,7 +74383,6 @@ MonoBehaviour:
     note tonight?"'
   - I'll just follow along for now. Best not let'em know I'm not one with their ways.
   - Stubborn and odd . . . best way to describe these villagers.
-  cp: 
 --- !u!61 &1396990234
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -74374,6 +74408,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 39.593033, y: 21.1}
   m_EdgeRadius: 0
+--- !u!114 &1396990235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1396990231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5942a4ed167c0546b9f79e53e2510dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1397806464
 GameObject:
   m_ObjectHideFlags: 0
@@ -86373,6 +86418,7 @@ GameObject:
   - component: {fileID: 1704129451}
   - component: {fileID: 1704129452}
   - component: {fileID: 1704129453}
+  - component: {fileID: 1704129454}
   m_Layer: 5
   m_Name: Dialogue Manager
   m_TagString: Untagged
@@ -86420,6 +86466,7 @@ MonoBehaviour:
   - Well, I should explore the village a bit for now. Ceremony is happening tonight
     so I might as well stick around.
   currentLine: 0
+  lastDialogue: 
 --- !u!114 &1704129453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86436,6 +86483,23 @@ MonoBehaviour:
   cp3: 0
   cp4: 0
   cp5: 0
+  cp6: 0
+--- !u!114 &1704129454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1704129450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c3dd3952d2ce64582718c7cc3e4198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dBox: {fileID: 0}
+  dText: {fileID: 0}
+  dialogueActive: 0
+  dialogueLine: I should probably look around the village first.
+  currentLine: 0
 --- !u!1 &1704545102
 GameObject:
   m_ObjectHideFlags: 0
@@ -87641,7 +87705,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - Strange . . . More fireflies . . . ?
-  cp: 
 --- !u!61 &1748032754
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -88069,7 +88132,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - This must be under the berry bushes . . . where all those fireflies came from!
-  cp: 
 --- !u!1 &1779841013
 GameObject:
   m_ObjectHideFlags: 0
@@ -88272,6 +88334,7 @@ GameObject:
   - component: {fileID: 1789210266}
   - component: {fileID: 1789210268}
   - component: {fileID: 1789210267}
+  - component: {fileID: 1789210269}
   m_Layer: 0
   m_Name: dialogueZone
   m_TagString: Untagged
@@ -88298,7 +88361,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1789210265}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a4f62648a323ce0488f2ef998f9e2793, type: 3}
   m_Name: 
@@ -88311,7 +88374,6 @@ MonoBehaviour:
   - Could you go into the forest undergrounds and help me find it? Please...
   - My family will be punished harshly for it... I can't do that to them...
   - You'll get an award for it... I promise.
-  cp: 
 --- !u!61 &1789210268
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -88337,6 +88399,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1789210269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1789210265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12eeebeb6ee485c4fa8d60ed37b11099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - Damn it... I'll be punished greatly for this...
+  - Hey... I need you to do a huge favour for me. It's a lot ask...
+  - '... but I really need your help. I was exploring the forest undergrounds today,
+    must''ve dropped my secret note somewhere there.'
+  - Could you go into the forest undergrounds and help me find it? Please...
+  - My family will be punished harshly for it... I can't do that to them...
+  - You'll get an award for it... I promise.
+  count: 0
 --- !u!4 &1789644193 stripped
 Transform:
   m_PrefabParentObject: {fileID: 472484, guid: b18669c98c593c945b6154adf121f7ce, type: 2}
@@ -102303,7 +102385,6 @@ MonoBehaviour:
   - "\"THE VILLAGE \u2192 \""
   - "\" \u2190 PROHIBITED \""
   - 'I wonder . . . '
-  cp: 
 --- !u!61 &2037319810
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -106557,7 +106638,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - "\"BERRY BUSH FARM \u2192 \""
-  cp: 
 --- !u!61 &2095037397
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -106970,7 +107050,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - Let's hope no catches me...
-  cp: 
 --- !u!61 &2135183158
 BoxCollider2D:
   m_ObjectHideFlags: 0
